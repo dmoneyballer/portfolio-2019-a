@@ -133,3 +133,18 @@ p{
 .footer {
   color: white;
 }
+#unlimited-scroll {
+  background-color: silver;
+  height: 1500px;
+}
+#placeholder {
+  height: 500px;
+}
+@media (max-width: 768px) {
+  #unlimited-scroll {
+    height:2200px
+  }
+}
+.rock {
+  padding: 10px;
+}
