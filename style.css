@@ -49,11 +49,28 @@ p{
 a p {
   color:black
 }
+.card img {
+  border:3px solid black;
+}
 #hive {
   height: 282px;
 }
-.card img {
-  height:286px;
+#spa {
+  margin-top: 85px;
+}
+#calc {
+  height: 226px;
+}
+#forum {
+  margin-top: 85px;
+}
+.card-body {
+  margin-bottom: 50px
+}
+.btn-primary {
+  position: absolute;
+  left: 33.33%;
+  bottom: 15px;
 }
 #footer {
   width:100%;

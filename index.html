@@ -7,13 +7,17 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script defer src="https://use.fontawesome.com/releases/v5.7.0/js/all.js" integrity="sha384-qD/MNBVMm3hVYCbRTSOW130+CWeRIKbpot9/gR1BHkd7sIct4QKhT1hOPd+2hO8K" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
 </head>
 <nav id="navbar" class="navbar navbar-expand-md navbar-dark bg-dark ">
   <a class="navbar-brand" href="#navbar">DREW GILLIES</a>
   <button class="navbar-toggler" role="button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 
     <span class="navbar-toggler-icon"></span>
-  </button>
+  </button><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
     <ul class="navbar-nav mr-auto">
@@ -54,69 +58,90 @@
 <!-- ^container -->
 <div class="container" id="projects">
   <div class="row mt-5 justify-content-center">
-    <a href="https://vigorous-goldberg-ad1b27.netlify.com/" target="_blank">
-      <div class="card card-custom mx-2 mb-3" style="width: 18rem;">
-        <img class="card-img-top" src="https://drewstechjourney.files.wordpress.com/2019/02/react-spa.png?w=660" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">React SPA for meetings</h5>
-          <p class="card-text">A react based SPA to manage meetings. Authentication and database through Firebase.</p>
-          <a href="https://vigorous-goldberg-ad1b27.netlify.com/" target="_blank" class="btn btn-primary">Show me</a>
-        </div>
-      </div>
-    </a>
-    <a href="https://codesandbox.io/s/github/dmoneyballer/react-calculator" target="_blank">
-      <div class="card card-custom mx-2 mb-3" style="width: 18rem;">
-        <img class="card-img-top" src="https://drewstechjourney.files.wordpress.com/2019/02/react-calc-perfect-size.png?w=660" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">React calculator</h5>
-          <p class="card-text">A web app that functions as a calculator. It responds to clicks or keypad input. Delete to clear or backspase to remove the last character.</p>
-          <a href="https://codesandbox.io/s/github/dmoneyballer/react-calculator" target="_blank" class="btn btn-primary">Show me</a>
-        </div>
-      </div>
-    </a>
-    <a href="https://chrome.google.com/webstore/detail/wikipedia-search/ddegbicimeoieleldgejoeoekoeabjpe?fbclid=IwAR0nxKuhqpa5v0_AV24g_ttdt9x6TChKOW0XKml84-fS5egoYzYHHk1ywNg" target="_blank">
-      <div class="card card-custom mx-2 mb-3" style="width: 18rem;">
-        <img class="card-img-top" src="https://drewstechjourney.files.wordpress.com/2018/08/wikipedia-viewer.jpg?w=660" alt="Wikipedia chrome extension">
-        <div class="card-body">
-          <h5 class="card-title">Wikipedia Viewer</h5>
-          <p class="card-text">In this project I got familiar with the wikipedia api documentation and worked with it.</p>
-          <a href="https://chrome.google.com/webstore/detail/wikipedia-search/ddegbicimeoieleldgejoeoekoeabjpe?fbclid=IwAR0nxKuhqpa5v0_AV24g_ttdt9x6TChKOW0XKml84-fS5egoYzYHHk1ywNg" target="_blank" class="btn btn-primary">Show me</a>
-        </div>
-      </div>
-    </a>
-  </div>
-  <a href="https://codepen.io/dmoneyballer/full/XEaOJZ/" target="_blank">
-    <div class="row mt-5 justify-content-center">
-      <div class="card card-custom mx-2 mb-3" style="width: 18rem;">
-        <img class="card-img-top" src="https://drewstechjourney.files.wordpress.com/2018/08/random-quote-generator.jpg?w=660" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Random Quote Generator</h5>
-          <p class="card-text">I made an json bin where I stored the quote array. I continued learning about how to make API calls with this project</p>
-          <a href="https://codepen.io/dmoneyballer/full/XEaOJZ/" target="_blank" class="btn btn-primary">Show me</a>
-        </div>
-      </div>
-  </a>
-  <a href="https://hive.xyz/forums" target="_blank">
     <div class="card card-custom mx-2 mb-3" style="width: 18rem;">
-      <img class="card-img-top" src="https://drewstechjourney.files.wordpress.com/2019/02/hive.xyz_.png?" alt="hive.xyz forum" alt="Card image cap">
+      <a data-fancybox="gallery" href="https://drewstechjourney.files.wordpress.com/2019/02/react-spa.png?w=660">
+      <img id="singlePageApp" class="showImage card-img-top" src="https://drewstechjourney.files.wordpress.com/2019/02/react-spa.png?w=660" alt="Card image cap">
+      </a>
+      <div id="spa" class="card-body">
+        <a href="https://vigorous-goldberg-ad1b27.netlify.com/" target="_blank">
+          <h5 class="card-title">React SPA for meetings</h5>
+        </a>
+        <p class="card-text">A react based SPA to manage meetings. Authentication and database through Firebase.</p>
+        <a href="https://vigorous-goldberg-ad1b27.netlify.com/" target="_blank" class="btn btn-primary">Show me</a>
+      </div>
+    </div>
+
+    <div class="card card-custom mx-2 mb-3" style="width: 18rem;">
+      <a data-fancybox="gallery" href="https://drewstechjourney.files.wordpress.com/2019/02/react-calc-perfect-size.png?w=660">
+      <img id="calc" class="image showImage card-img-top" src="https://drewstechjourney.files.wordpress.com/2019/02/react-calc-perfect-size.png?w=660" alt="Card image cap">
+      </a>
       <div class="card-body">
-        <h5 class="card-title">Hive.xyz Forum</h5>
+        <a href="https://codesandbox.io/s/github/dmoneyballer/react-calculator" target="_blank">
+          <h5 class="card-title">React calculator</h5>
+        </a>
+        <p class="card-text">A web app that functions as a calculator. It responds to clicks or keypad input. Delete to clear or backspase to remove the last character.</p>
+        <a href="https://codesandbox.io/s/github/dmoneyballer/react-calculator" target="_blank" class="btn btn-primary">Show me</a>
+      </div>
+    </div>
+
+    <div class="card card-custom mx-2 mb-3" style="width: 18rem;">
+      <a data-fancybox="gallery" href="https://drewstechjourney.files.wordpress.com/2018/08/wikipedia-viewer.jpg?w=660">
+      <img id="wiki" class="showImage card-img-top" src="https://drewstechjourney.files.wordpress.com/2018/08/wikipedia-viewer.jpg?w=660" alt="Wikipedia chrome extension">
+      </a>
+      <div class="card-body">
+        <a href="https://chrome.google.com/webstore/detail/wikipedia-search/ddegbicimeoieleldgejoeoekoeabjpe?fbclid=IwAR0nxKuhqpa5v0_AV24g_ttdt9x6TChKOW0XKml84-fS5egoYzYHHk1ywNg" target="_blank">
+          <h5 class="card-title">Wikipedia Viewer</h5>
+        </a>
+        <p class="card-text">In this project I got familiar with the wikipedia api documentation and worked with it.</p>
+        <a href="https://chrome.google.com/webstore/detail/wikipedia-search/ddegbicimeoieleldgejoeoekoeabjpe?fbclid=IwAR0nxKuhqpa5v0_AV24g_ttdt9x6TChKOW0XKml84-fS5egoYzYHHk1ywNg" target="_blank" class="btn btn-primary">Show me</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mt-5 justify-content-center">
+    <div class="card card-custom mx-2 mb-3" style="width: 18rem;">
+      <a data-fancybox="gallery" href="https://drewstechjourney.files.wordpress.com/2018/08/random-quote-generator.jpg?w=660">
+      <img class="card-img-top" src="https://drewstechjourney.files.wordpress.com/2018/08/random-quote-generator.jpg?w=660" alt="Card image cap">
+      </a>
+      <div class="card-body">
+        <a href="https://codepen.io/dmoneyballer/full/XEaOJZ/" target="_blank">
+          <h5 class="card-title">Random Quote Generator</h5>
+        </a>
+        <p class="card-text">I made an json bin where I stored the quote array. I continued learning about how to make API calls with this project</p>
+        <a href="https://codepen.io/dmoneyballer/full/XEaOJZ/" target="_blank" class="btn btn-primary">Show me</a>
+      </div>
+    </div>
+    <div class="card card-custom mx-2 mb-3" style="width: 18rem;">
+      <a data-fancybox="gallery" href="https://drewstechjourney.files.wordpress.com/2019/02/hive.xyz_.png?">
+      <img class="card-img-top" src="https://drewstechjourney.files.wordpress.com/2019/02/hive.xyz_.png?" alt="hive.xyz forum" alt="Card image cap">
+      </a>
+      <div id="forum" class="card-body">
+        <a href="https://hive.xyz/forums" target="_blank">
+          <h5 class="card-title">Hive.xyz Forum</h5>
+        </a>
         <p class="card-text">A forum where students can ask questions about their university classes</p>
         <a href="https://hive.xyz/forums" target="_blank" class="btn btn-primary">Show me</a>
       </div>
     </div>
-  </a>
-  <a href="https://codepen.io/dmoneyballer/full/gzZymq/" target="_blank">
     <div class="card card-custom mx-2 mb-3" style="width: 18rem;">
+      <a data-fancybox="gllery" href="https://drewstechjourney.files.wordpress.com/2018/08/weather-app.jpg?w=660">
       <img class="card-img-top" src="https://drewstechjourney.files.wordpress.com/2018/08/weather-app.jpg?w=660" alt="weather app">
+      </a>
       <div class="card-body">
-        <h5 class="card-title">Weather app</h5>
+        <a href="https://codepen.io/dmoneyballer/full/gzZymq/" target="_blank">
+          <h5 class="card-title">Weather app</h5>
+        </a>
         <p class="card-text">An app fetching weather data from an api. this is the first project I learned how to make API calls.</p>
         <a href="https://codepen.io/dmoneyballer/full/gzZymq/" target="_blank" class="btn btn-primary">Show me</a>
       </div>
     </div>
-  </a>
+  </div>
+  <div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
 </div>
+
 </div>
 <!-- container -->
 
@@ -131,3 +156,6 @@
 
   </ul>
 </nav>
+<<script type="text/javascript" src="main.js">
+
+</script>
